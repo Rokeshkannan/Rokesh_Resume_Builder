@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CareerCraft – Free, job-specific resume builder</title>
+<meta name="description" content="Build a professional, ATS-friendly resume tailored to a job description. Free, private, no sign-up.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><a href="#" class="logo" data-a="home">CareerCraft</a><span class="tag">Your Experience. Your Story. Your Next Opportunity.</span></header>
+
+<main id="landing">
+  <section class="hero">
+    <h1>Your Next Opportunity Starts With Your Story.</h1>
+    <p>Build a professional, job-specific resume with guided optimization. Simple, transparent and free.</p>
+    <button class="btn" data-a="start">Build My Resume</button>
+    <button class="btn sec" id="contBtn" data-a="cont" hidden>Continue my saved draft</button>
+  </section>
+  <section class="wrap">
+    <h2>How it works</h2>
+    <div class="cols">
+      <div class="card"><b>1. Tell us about you</b><p>Pick Fresher or Experienced, then add your details, education and experience.</p></div>
+      <div class="card"><b>2. Paste the job description</b><p>We pull out the skills and terms the employer asks for and compare them with your profile.</p></div>
+      <div class="card"><b>3. Review every suggestion</b><p>Accept, edit or reject each change. Nothing is added without your approval.</p></div>
+      <div class="card"><b>4. Pick a template, download</b><p>Choose a layout, check your estimated ATS score and save an A4 PDF.</p></div>
+    </div>
+    <h2>Features</h2>
+    <div class="cols">
+      <div class="card"><b>Fresher and experienced paths</b><p>The form adapts: objective, internships and academic projects, or summary and work history.</p></div>
+      <div class="card"><b>Honest optimization</b><p>No invented skills, jobs or numbers. If a result has no figure, we ask for your real one.</p></div>
+      <div class="card"><b>Transparent ATS estimate</b><p>A 100-point score with an explanation for every part. It is an estimate, not an employer's ATS result.</p></div>
+      <div class="card"><b>Three ATS-safe templates</b><p>Classic ATS, Modern Professional and Executive, all single-column.</p></div>
+    </div>
+    <h2>Privacy</h2>
+    <p class="note">Everything runs in your browser. Your details and job descriptions are never sent to a server or an AI service. Your draft is saved in this browser on this device only, and you can clear it at any time. Don't use a shared computer without clearing your draft.</p>
+    <h2>Frequently asked questions</h2>
+    <details><summary>Is it really free?</summary><p>Yes. No account, subscription or payment.</p></details>
+    <details><summary>Does this guarantee I pass an ATS?</summary><p>No. The score estimates how well your resume matches a job description using keyword and structure checks. Real systems differ.</p></details>
+    <details><summary>Will it add skills I don't have?</summary><p>Never. Missing keywords are only shown to you. You decide which ones are true for you.</p></details>
+    <details><summary>Where is my data stored?</summary><p>In your browser's local storage. Clearing browser data or using "Clear draft" removes it.</p></details>
+  </section>
+</main>
+
+<main id="wizard" class="wrap" hidden>
+  <div class="prog"><div id="bar"></div></div>
+  <div id="stepLabel" class="note"></div>
+  <div id="view"></div>
+</main>
+
+<footer class="foot">CareerCraft – free and private. Scores are estimates only.</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
